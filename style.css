@@ -43,17 +43,36 @@ section {
     margin-bottom: 2rem;
 }
 
+/* 갤러리 섹션 스타일 */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
+/* 호버 효과 */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 푸터 스타일 */
 footer {
     background: #333;
     color: #fff;
@@ -62,6 +81,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* 폼 스타일 */
 form {
     max-width: 600px;
     margin: 0 auto;
